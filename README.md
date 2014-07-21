@@ -3,11 +3,12 @@ docker-wrk
 
 Docker image for wrk
 
+#### Usage example
 ```bash
 docker run cydev/wrk http://google.com
 ```
 
-#### Help
+#### Help output
 ```bash
 root@m:/src/docker-wrk# docker run cydev/wrk -h
 wrk: invalid option -- 'h'
