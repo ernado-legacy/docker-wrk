@@ -6,3 +6,23 @@ Docker image for wrk
 ```bash
 docker run cydev/wrk http://google.com
 ```
+
+#### Help
+```bash
+root@m:/src/docker-wrk# docker run cydev/wrk -h
+wrk: invalid option -- 'h'
+Usage: wrk <options> <url>                            
+  Options:                                            
+    -c, --connections <N>  Connections to keep open   
+    -d, --duration    <T>  Duration of test           
+    -t, --threads     <N>  Number of threads to use   
+                                                      
+    -s, --script      <S>  Load Lua script file       
+    -H, --header      <H>  Add header to request      
+        --latency          Print latency statistics   
+        --timeout     <T>  Socket/request timeout     
+    -v, --version          Print version details      
+                                                      
+  Numeric arguments may include a SI unit (1k, 1M, 1G)
+  Time arguments may include a time unit (2s, 2m, 2h)
+```
